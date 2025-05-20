@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/reset.css" />
     <link
       rel="icon"
       href="https://tripadvisor-lereacteur.netlify.app/assets/img/favicon-tripadvisor.svg" />
@@ -11,24 +12,77 @@
       src="https://kit.fontawesome.com/49de3e34f1.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style/fonts.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
   </head>
-  <body>
+  <body class="container">
     <header>
-      <div>
-        <img
-          src="https://tripadvisor-lereacteur.netlify.app/assets/img/Tripadvisor_logo.svg"
-          alt="logo TripAtvisor" />
-      </div>
-
-      <div>
-        <i class="fa-light fa-pen"></i>
-        <p>Avis</p>
-      </div>
-      <button>Voyage</button>
-      <button>Alertes</button>
-      <button>Connectez-vous</button>
+      <nav>
+        <div>
+          <img
+            src="https://tripadvisor-lereacteur.netlify.app/assets/img/Tripadvisor_logo.svg"
+            alt="logo TripAtvisor" />
+        </div>
+        <div>
+          <p><i class="fa-solid fa-pen"></i><span>Avis</span></p>
+          <p><i class="fa-regular fa-heart"></i><span>Voyages</span></p>
+          <p><i class="fa-regular fa-bell"></i><span>Alertes</span></p>
+          <button>Connectez-vous</button>
+          <p><i class="fa-solid fa-cart-shopping"></i><span>Panier</span></p>
+        </div>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <h1><span>Explorez</span> Paris</h1>
+      <p class="comments">
+        Les revenus influencent le choix des expériences présentées sur cette
+        page : <a href="">en savoir plus.</a>
+      </p>
+      <nav>
+        <div>Hôtels <i class="fa-solid fa-bed"></i></div>
+        <div>Location de vacances<i class="fa-solid fa-house"></i></div>
+        <div>Activités<i class="fa-solid fa-ticket"></i></div>
+        <div>Restaurants<i class="fa-solid fa-utensils"></i></div>
+        <div>Forums de voyage<i class="fa-solid fa-comments"></i></div>
+        <div>Plus <span>•••</span></div>
+      </nav>
+      <div class="pictures-Box">
+        <img
+          src="https://tripadvisor-lereacteur.netlify.app/assets/img/view.jpg"
+          alt="Rue en bord de rivière avec arbres" />
+        <img
+          src="https://tripadvisor-lereacteur.netlify.app/assets/img/caption-8.jpg"
+          alt="Homme et femme sur une moto à l'arrêt" />
+        <img
+          src="https://tripadvisor-lereacteur.netlify.app/assets/img/caption-9.jpg"
+          alt="Champs de Mars avec la tour Eiffel" />
+      </div>
+      <nav>
+        <a href="">Europe</a> > <a href="">France</a> >
+        <a href="">île-de-France</a> > <a href="">Paris ▾</a>
+      </nav>
+      <div>
+        <div>
+          <h2>La Ville Lumière éblouit en tous points</h2>
+          <p>
+            Aucun autre endroit au monde ne fait autant rêver que Paris. La
+            ville séduit par son art, son architecture, sa culture et sa
+            cuisine, mais il y a aussi des merveilles plus discrètes qui
+            n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+            les pâtisseries au coin de la rue et les petits bistrots douillets
+            qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+            vous approprier Paris.
+          </p>
+        </div>
+        <div>
+          <h3>Paris : commencez à organiser !</h3>
+          <p>
+            Créez un voyage pour enregistrer et organiser toutes vos idées et
+            les visualiser sur une carte.
+          </p>
+          <img src="./assets/img/maps_cnuhsr.png" alt="plan" />
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
