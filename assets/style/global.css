@@ -24,12 +24,18 @@ h1 {
 h2 {
   margin-bottom: 30px;
   font-family: TS-Med, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bolder;
 }
 
 h3 {
   font-family: TS-Reg, Helvetica, sans-serif;
   font-size: 30px;
+  font-weight: bolder;
+}
+
+h4 {
+  font-family: TS-Reg, Helvetica, sans-serif;
+  font-size: 24px;
   font-weight: bolder;
 }

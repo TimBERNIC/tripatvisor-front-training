@@ -1,0 +1,59 @@
+.second-part {
+  display: flex;
+  height: 472px;
+  margin-bottom: 80px;
+}
+.text-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.text-section p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  margin-top: 12px;
+}
+
+.plan-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.plan-section > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ff5d5d;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 32px;
+  height: 60%;
+  width: 70%;
+}
+.plan-section > :nth-child(2) {
+  height: 40%;
+  width: 70%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.plan-section button {
+  background-color: black;
+  color: white;
+  width: 154px;
+  height: 54px;
+  border: none;
+  border-radius: 10px;
+  font-family: TS-Med, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.plan-section button:hover {
+  cursor: pointer;
+  background-color: #333333;
+}

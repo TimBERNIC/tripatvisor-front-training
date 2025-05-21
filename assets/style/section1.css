@@ -1,5 +1,5 @@
 .first-part {
-    width: 100%
+  width: 100%;
 }
 h1 span {
   color: #ff5d5d;
@@ -34,7 +34,7 @@ main nav > div {
   height: 100%;
 }
 main nav i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 main nav .activities-nav:hover {
@@ -49,46 +49,41 @@ main nav .activities-nav:hover {
   gap: 2px;
   width: 100%;
   height: 430px;
-
-
 }
 
 .pictures-box1 {
-
   display: flex;
   flex-direction: column;
-  /* position: relative; */
   width: 55%;
   height: 430px;
-
 }
 .pictures-box2 {
-    display: flex;
-    flex-direction: column;
-     width: 45%;
-     gap : 2px
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 2px;
 }
 .pictures-box2-Up,
 .pictures-box2-Down {
   height: calc(50% - 1px);
   width: 100%;
   position: relative;
- 
 }
 
-.pictures-box img{
+.pictures-box img {
   height: 100%;
   width: 100%;
-   object-fit: cover;
+  object-fit: cover;
 }
 
 .pictures-box > .pictures-box1 > button {
   z-index: 10;
   position: absolute;
-  top: 660px;
-  left: 80px;
+  top: 680px;
+  left: 100px;
   color: white;
   background-color: black;
+  z-index: 5;
   border-radius: 30px;
   border: none;
   font-weight: bold;
@@ -112,18 +107,17 @@ main nav .activities-nav:hover {
 }
 
 menu {
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 7px;
   margin: 20px 0px 40px 0px;
   width: 100%;
   height: 16px;
-
 }
 
-menu a, i{
-
+menu a,
+i {
   font-size: 12px;
   color: black;
   text-decoration: none;
@@ -137,55 +131,3 @@ menu a:hover {
 menu i:hover {
   color: #646464;
 }
-.second-part {
-  display: flex;
-  border: solid blue 2px;
-  height: 472px;
-}
- .text-section {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.text-section p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
-  line-height: 24px;
-  color: #333333;
-  margin-top: 12px;
-}
-
-.plan-section {
-width: 50%;
-height: 100%;
- display: flex;
- flex-direction: column;
- align-items: flex-end;
- border: rgb(43, 226, 80) solid 2px; 
-}
-
-.plan-section> :nth-child(1) {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-background-color: #FF5D5D;
-
-border-top-left-radius: 20px ;
-border-top-right-radius: 20px ;
-padding: 32px;
-height: 60%;
-width: 70% ;
-}
-.plan-section> :nth-child(2) {
-height: 40%;
-width: 70% ;
-border-bottom-left-radius: 20px ;
-border-bottom-right-radius: 20px ;
-}
-
-/* .plan-section > img,
-div {
-  max-width: 400px;
-} */
-/* .second-part > div {
-  /* border: #ff5d5d 2px solid;
