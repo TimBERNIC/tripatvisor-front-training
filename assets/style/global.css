@@ -1,0 +1,35 @@
+/* régles de base */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1095px;
+  margin: 0px auto;
+  border: red solid 3px;
+}
+
+body {
+  font-family: TS-Reg, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  padding: 30px 0px 10px 0px;
+  font-family: TS-Med, Helvetica, sans-serif;
+  font-size: 54px;
+  font-weight: bolder;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-family: TS-Med, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+h3 {
+  font-family: TS-Reg, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+}

@@ -14,54 +14,72 @@
     <link rel="stylesheet" href="./assets/style/fonts.css" />
     <link rel="stylesheet" href="./assets/style/style.css" />
   </head>
-  <body class="container">
+  <body>
     <header>
-      <nav>
-        <div>
-          <img
-            src="https://tripadvisor-lereacteur.netlify.app/assets/img/Tripadvisor_logo.svg"
-            alt="logo TripAtvisor" />
-        </div>
-        <div>
+      <div class="container">
+        <img
+          src="https://tripadvisor-lereacteur.netlify.app/assets/img/Tripadvisor_logo.svg"
+          alt="logo TripAtvisor" />
+        <nav>
           <p><i class="fa-solid fa-pen"></i><span>Avis</span></p>
           <p><i class="fa-regular fa-heart"></i><span>Voyages</span></p>
           <p><i class="fa-regular fa-bell"></i><span>Alertes</span></p>
           <button>Connectez-vous</button>
           <p><i class="fa-solid fa-cart-shopping"></i><span>Panier</span></p>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
-    <main>
+    <main class="container">
+      <section class="first-part">
       <h1><span>Explorez</span> Paris</h1>
       <p class="comments">
         Les revenus influencent le choix des expériences présentées sur cette
         page : <a href="">en savoir plus.</a>
       </p>
       <nav>
-        <div>Hôtels <i class="fa-solid fa-bed"></i></div>
-        <div>Location de vacances<i class="fa-solid fa-house"></i></div>
-        <div>Activités<i class="fa-solid fa-ticket"></i></div>
-        <div>Restaurants<i class="fa-solid fa-utensils"></i></div>
-        <div>Forums de voyage<i class="fa-solid fa-comments"></i></div>
-        <div>Plus <span>•••</span></div>
+        <div class="activities-nav"><span>Hôtels</span> <i class="fa-solid fa-bed"></i></div>
+        <div class="activities-nav">
+         <span> Location de vacances</span><i class="fa-solid fa-house"></i>
+        </div>
+        <div class="activities-nav">
+         <span> Activités</span><i class="fa-solid fa-ticket"></i>
+        </div>
+        <div class="activities-nav">
+         <span>Restaurants</span> <i class="fa-solid fa-utensils"></i>
+        </div>
+        <div class="activities-nav">
+          <span>Forums de voyage </span><i class="fa-solid fa-comments"></span></i>
+        </div>
+        <div class="activities-nav"><span>Plus</span> <span>•••</span></div>
       </nav>
-      <div class="pictures-Box">
-        <img
-          src="https://tripadvisor-lereacteur.netlify.app/assets/img/view.jpg"
-          alt="Rue en bord de rivière avec arbres" />
-        <img
-          src="https://tripadvisor-lereacteur.netlify.app/assets/img/caption-8.jpg"
-          alt="Homme et femme sur une moto à l'arrêt" />
-        <img
-          src="https://tripadvisor-lereacteur.netlify.app/assets/img/caption-9.jpg"
-          alt="Champs de Mars avec la tour Eiffel" />
+      <div class="pictures-box">
+        <div class="pictures-box1">
+          <img
+            src="https://tripadvisor-lereacteur.netlify.app/assets/img/view.jpg"
+            alt="Rue en bord de rivière avec arbres" />
+          <button><i class="fa-solid fa-image"></i>Toutes les photos</button>
+        </div>
+        <div class="pictures-box2">
+          <div class="pictures-box2-Up">
+            <img
+              src="https://tripadvisor-lereacteur.netlify.app/assets/img/caption-8.jpg"
+              alt="Homme et femme sur une moto à l'arrêt" />
+          </div>
+          <div class="pictures-box2-Down">
+            <img
+              src="https://tripadvisor-lereacteur.netlify.app/assets/img/caption-9.jpg"
+              alt="Champs de Mars avec la tour Eiffel" />
+          </div>
+        </div>
       </div>
-      <nav>
+      <menu>
         <a href="">Europe</a> > <a href="">France</a> >
-        <a href="">île-de-France</a> > <a href="">Paris ▾</a>
-      </nav>
-      <div>
-        <div>
+        <a href="">île-de-France</a> > <a id="single-endpoint" href="">Paris </a
+        ><i class="fa-solid fa-caret-down"></i>
+      </menu>
+    </section>
+      <section class="second-part">
+        <div class="text-section">
           <h2>La Ville Lumière éblouit en tous points</h2>
           <p>
             Aucun autre endroit au monde ne fait autant rêver que Paris. La
@@ -73,15 +91,21 @@
             vous approprier Paris.
           </p>
         </div>
-        <div>
-          <h3>Paris : commencez à organiser !</h3>
-          <p>
-            Créez un voyage pour enregistrer et organiser toutes vos idées et
-            les visualiser sur une carte.
-          </p>
+        <div class="plan-section">
+          <div>
+            
+            <h3>Paris : commencez à organiser !</h3>
+            <p>
+              Créez un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </p>
+            <button>Créez un voyage</button>
+          </div>
+
+  
           <img src="./assets/img/maps_cnuhsr.png" alt="plan" />
         </div>
-      </div>
+      </section>
     </main>
     <footer></footer>
   </body>

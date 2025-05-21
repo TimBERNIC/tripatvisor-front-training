@@ -1,0 +1,64 @@
+/* HEADER */
+header {
+  height: 100%;
+  margin: 10px 0px;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background-color: white;
+  scrollbar-color: #333333;
+  scrollbar-width: 10px;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  height: 40px;
+}
+
+header div nav {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div nav > p,
+button {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 110px;
+  height: 40px;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+header > div > nav > p:hover {
+  background-color: rgb(246, 245, 245);
+  cursor: pointer;
+}
+
+header > nav > div > img:hover {
+  cursor: pointer;
+}
+
+header div nav button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  width: 160px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+}
+
+header div nav button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
