@@ -36,8 +36,10 @@ main nav > div {
 main nav i {
   font-size: 20px;
 }
-
-main nav .activities-nav:hover {
+.activities-nav > i {
+  color: rgb(190, 187, 187);
+}
+.activities-nav:hover {
   background-color: black;
   color: white;
   transition-duration: 0.1s;
@@ -94,6 +96,9 @@ main nav .activities-nav:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.pictures-box > .pictures-box1 > button > i {
+  color: white;
 }
 .pictures-box > .pictures-box1 > button:hover {
   background-color: #333333;

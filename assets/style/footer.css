@@ -1,0 +1,33 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 156px;
+  background-color: #faf1ec;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+footer img {
+  width: 40px;
+}
+footer p {
+  font-size: 14px;
+}
+
+footer p span,
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
