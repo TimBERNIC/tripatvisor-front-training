@@ -88,7 +88,7 @@
 }
 
 .heart i {
-  font-size: 24px;
+  font-size: 21px;
 }
 .appreciations {
   display: flex;
@@ -108,7 +108,7 @@
 
 /* prime icone */
 .prime-icon i {
-  color: #05a96c;
+  color: #07db8d;
   font-size: 20px;
   position: absolute;
   top: 155px;
