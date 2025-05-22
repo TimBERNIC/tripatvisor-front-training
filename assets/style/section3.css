@@ -129,6 +129,7 @@
 .arrow:hover {
   background-color: white;
   opacity: 0.6;
+  transition: 0.5s;
 }
 .arrow i {
   width: 100%;
