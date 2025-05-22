@@ -1,0 +1,19 @@
+/* HEADER */
+header {
+  background-color: orange;
+}
+
+header div nav button {
+  min-width: 160px;
+}
+
+header > div > nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 30%;
+}
+
+header > div > nav > p > span {
+  display: none;
+}
