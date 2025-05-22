@@ -5,3 +5,5 @@
 @import "section3.css";
 @import "section4.css";
 @import "footer.css";
+@import "./tablet.css" (max-width: 1024px);
+@import "./phone.css" (max-width: 768px);

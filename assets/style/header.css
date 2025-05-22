@@ -4,7 +4,7 @@ header {
   margin: 10px 0px;
   position: sticky;
   top: 0px;
-  z-index: 5;
+  z-index: 15;
   background-color: white;
   scrollbar-color: #333333;
   scrollbar-width: 10px;
