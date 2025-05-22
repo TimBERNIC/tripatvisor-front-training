@@ -17,10 +17,10 @@
   object-fit: cover;
 }
 
-.travellers-box h5 {
+.travellers-box > h5 {
   margin: 10px 0px;
 }
-.travellers-box p {
+.travellers-box > p {
   font-size: 14px;
   margin-bottom: 10px;
 }

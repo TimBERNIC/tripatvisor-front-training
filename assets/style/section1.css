@@ -129,8 +129,8 @@ menu div {
   gap: 5px;
 }
 menu a,
-i,
-p {
+menu i,
+menu p {
   font-size: 12px;
   color: #333333;
   text-decoration: none;
