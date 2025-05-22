@@ -24,7 +24,7 @@
   align-items: flex-end;
 }
 
-.plan-section > :nth-child(1) {
+.plan-text-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,13 +36,17 @@
   height: 60%;
   width: 70%;
 }
-.plan-section > :nth-child(2) {
+
+.plan-img-box {
   height: 40%;
   width: 70%;
+}
+
+.plan-img-box > img {
+  width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-
 .plan-section button {
   background-color: black;
   color: white;
