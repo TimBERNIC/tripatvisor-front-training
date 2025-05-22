@@ -60,6 +60,7 @@ main nav i {
   flex-direction: column;
   width: 55%;
   height: 430px;
+  position: relative;
 }
 .pictures-box2 {
   display: flex;
@@ -83,8 +84,8 @@ main nav i {
 .pictures-box > .pictures-box1 > button {
   z-index: 10;
   position: absolute;
-  top: 670px;
-  left: 100px;
+  top: 370px;
+  left: 30px;
   color: white;
   background-color: black;
   z-index: 5;
