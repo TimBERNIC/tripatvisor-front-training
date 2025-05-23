@@ -38,9 +38,7 @@ main nav > div {
 main nav i {
   font-size: 20px;
 }
-.activities-nav > i {
-  color: rgb(190, 187, 187);
-}
+
 .activities-nav:hover {
   background-color: black;
   color: white;

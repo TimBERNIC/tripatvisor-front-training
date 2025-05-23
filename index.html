@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/reset.css" />
     <link
-      rel="icon"
-      href="https://tripadvisor-lereacteur.netlify.app/assets/img/favicon-tripadvisor.svg" />
+    rel="icon"
+    href="https://tripadvisor-lereacteur.netlify.app/assets/img/favicon-tripadvisor.svg" />
     <title>Tripadvisor🌈</title>
     <script
       src="https://kit.fontawesome.com/49de3e34f1.js"
       crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/style/fonts.css" />
-    <link rel="stylesheet" href="./assets/style/style.css" />
-    <link rel="stylesheet" href="./assets/style/icons.css" />
+      <link rel="stylesheet" href="./assets/style/fonts.css" />
+      <link rel="stylesheet" href="./assets/style/style.css" />
+      <link rel="stylesheet" href="./assets/style/icons.css" />
   </head>
   <body>
     <header>
       <div class="container">
+        <p><i class="icon-empty_cart"></i><span>Panier</span></p>
         <img
           src="https://tripadvisor-lereacteur.netlify.app/assets/img/Tripadvisor_logo.svg"
           alt="logo TripAtvisor" />
         <nav>
-          
-          <p><i class="icons-pencil"></i><span>Avis</span></p>
-          <p><i class="fa-regular fa-heart"></i><span>Voyages</span></p>
-          <p><i class="fa-regular fa-bell"></i><span>Alertes</span></p>
-          <button>Connectez-vous</button>
-          <p><i class="fa-solid fa-cart-shopping"></i><span>Panier</span></p>
+          <p class="only768p"><i class="icon-search"></i></p>
+          <p class="display-none"><i class="icon-pencil"></i><span>Avis</span></p>
+          <p class="display-none"><i class="icon-heart"></i><span>Voyages</span></p>
+          <p class="display-none"><i class="icon-notification_bell"></i><span>Alertes</span></p>
+          <button class ="display-none">Connectez-vous</button>
+          <p><i class="icon-empty_cart"></i><span>Panier</span></p>
         </nav>
       </div>
     </header>
@@ -40,19 +41,25 @@
         </p>
         <nav>
           <div class="activities-nav">
-            Hôtels<i class="fa-solid fa-bed"></i>
+            Hôtels<i class="icon-hotels"></i>
           </div>
           <div class="activities-nav">
-            <span> Location de vacances</span><i class="fa-solid fa-house"></i>
+            <span> Location de vacances</span><i class="icon-vacation_rentals"></i>
           </div>
           <div class="activities-nav">
-            <span> Activités</span><i class="fa-solid fa-ticket"></i>
+            <span> Activités</span><i class="icon-attractions"></i>
           </div>
           <div class="activities-nav">
-            <span>Restaurants</span> <i class="fa-solid fa-utensils"></i>
+            <span>Restaurants</span> <i class="icon-restaurants"></i>
           </div>
           <div class="activities-nav">
-            <span>Forums de voyage </span><i class="fa-solid fa-comments"></i>
+            <span>Forums de voyage </span><i class="icon-forums"></i>
+          </div>
+           <div class="activities-nav only1184p">
+            <span> Vols </span><i class="icon-flights"></i>
+          </div>
+           <div class="activities-nav only1184p">
+            <span> Croisières </span><i class="icon-cruises"></i>
           </div>
           <div class="activities-nav"><span>Plus</span> <i>•••</i></div>
         </nav>
@@ -61,7 +68,7 @@
             <img
               src="https://tripadvisor-lereacteur.netlify.app/assets/img/view.jpg"
               alt="Rue en bord de rivière avec arbres" />
-            <button><i class="fa-solid fa-image"></i>Toutes les photos</button>
+            <button><i class="icon-photo"></i>Toutes les photos</button>
           </div>
           <div class="pictures-box2">
             <div class="pictures-box2-Up">
@@ -113,7 +120,7 @@
               src="./assets/img/maps_cnuhsr.png"
               alt="plan" />
           </div>
-      </section>
+        </section>
       <section class="third-part">
         <h2>Paris : les immanquables</h2>
         <div class="carouselle-box">
@@ -128,91 +135,91 @@
           <ul class="carouselle">
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/louvre.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>Musée du Louvre</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i><span>1267</span>
+           <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i>
+                <i class="icon-bubble_rating_empty"></i><span>1267</span>
               </span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </li>
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/eiffeltoren.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+                <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>Tour Eiffel</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i
-                ><i class="fa-regular fa-circle"></i> <span>12487</span></span
+                <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i>
+                <i class="icon-bubble_rating_empty"></i> <span>12487</span></span
               >
               <p>Consequatur corrupti beatae excepturi cumque,</p>
             </li>
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/arc-de-triomphe-at-night.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>Arc de triomphe</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i><span>867</span>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i>
+                <i class="icon-bubble_rating_empty"></i></i><span>867</span>
               </span>
               <p>in aliquid totam quaerat explicabo ut veniam .</p>
             </li>
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/vue-de-la-cour-d-honneur.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>Cour d'Honneur</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i><span>659</span>
+               <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i>
+                <i class="icon-bubble_rating_empty"></i></i><span>659</span>
               </span>
               <p>fuga ipsam porro nesciunt laborum? Fugit dolor a sit facere</p>
             </li>
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/the-amazingly-detailed.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>Cathédrale brûlée</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i
+                <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i>
+                <i class="icon-bubble_rating_empty"></i></i
                 ><span>1000000</span>
               </span>
               <p>
@@ -222,19 +229,19 @@
             </li>
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/20180601-122841-largejpg.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>Gare trop stylée</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i>
-                <i class="fa-regular fa-circle"></i>
-                <i class="fa-regular fa-circle"></i>
-                <i class="fa-regular fa-circle"></i>
+            <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i>
+                <i class="icon-bubble_rating_empty"></i>
                 <span>57</span></span
               >
               <p>
@@ -244,8 +251,8 @@
             </li>
           </ul>
         </div>
-        <div class="arrow arrow-one"><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="arrow arrow-two"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="arrow arrow-one"><i class="icon-arrow_right"></i></div>
+        <div class="arrow arrow-two"><i class="icon-arrow_right"></i></div>
         <div class="carouselle-box">
           <div>
             <h4>Se restaurer</h4>
@@ -255,40 +262,38 @@
           <ul class="carouselle">
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/meal6.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>Frenchie</h5>
               </div>
-              
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i>
-                <i class="fa-regular fa-circle"></i>
-                <i class="fa-regular fa-circle"></i>
-                <i class="fa-regular fa-circle"></i>
+                <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i>
+                <i class="icon-bubble_rating_empty"></i>
+                <i class="icon-bubble_rating_empty"></i>
                 <span>57</span>
               </span>
               <p>€€€ Lorem ipsum dolor sit amet consectetur,</p>
             </li>
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/meal5.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>Aux Poil</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i
-                ><span>1000000</span>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i>
+                <i class="icon-bubble_rating_empty"></i><span>1000000</span>
               </span>
               <p>
                 €€ adipisicing elit. Iure cum provident alias modi illum amet
@@ -297,19 +302,19 @@
             </li>
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/meal4.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>Veggie</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i><span>1267</span>
+                   <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i>
+                <i class="icon-bubble_rating_empty"></i><span>47</span>
               </span>
               <p>
                 €€€€€ ab dignissimos earum ipsum perspiciatis est adipisci ad
@@ -318,38 +323,39 @@
             </li>
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/meal3.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>Chez GastroLand</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i
-                ><span>659</span></span
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i><span>1067</span>
+      
+                <span>659</span></span
               >
               <p>id, voluptate assumenda dolore.</p>
             </li>
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/meal2.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>A la biche A dorer</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i><span>867</span>
+             <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i><span>867</span>
               </span>
               <p>
                 €€€ Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -358,19 +364,19 @@
             </li>
             <li>
               <div>
-                <p class="heart"><i class="fa-regular fa-heart"></i></p>
+                <p class="heart"><i class="icon-heart"></i></p>
                 <img
                   src="https://tripadvisor-lereacteur.netlify.app/assets/img/meal1.jpg"
                   alt="" />
-                <p class="prime-icon"><i class="fa-solid fa-crown"></i></p>
+              <div class="prime-icon"><i class="icon-travelers_choice_badge"></i><p class="year">2022</p></div>
                 <h5>A la bonne Huître!</h5>
               </div>
               <span class="appreciations">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle-half-stroke"></i><span> 1267</span>
+              <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                 <i class="icon-bubble_rating_full"></i>
+                <i class="icon-bubble_rating_half"></i><span> 1267</span>
               </span>
               <p>
                 €€€ Lorem ipsum dolor, sit amet consectetur adipisicing elit.

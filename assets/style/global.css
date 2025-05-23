@@ -13,6 +13,14 @@ body {
   font-size: 16px;
 }
 
+.only768p {
+  display: none;
+}
+
+.only1184p {
+  display: none;
+}
+
 h1 {
   padding: 30px 0px 10px 0px;
   font-family: TS-Med, Helvetica, sans-serif;

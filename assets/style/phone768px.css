@@ -2,6 +2,12 @@ header {
   background-color: aqua;
 }
 
+.only768p {
+  display: inherit;
+}
+.display-none {
+  display: none;
+}
 header div nav button {
   min-width: 160px;
 }
@@ -13,6 +19,22 @@ header > div > nav {
   width: 30%;
 }
 
+header > div > nav {
+  width: 100px;
+  margin: 0px 20px;
+  gap: 0px;
+}
+
+header > div > nav > p {
+  width: 40px;
+}
+
 header > div > nav > p > span {
   display: none;
+}
+
+header > div {
+  display: flex;
+  border: 2px black solid;
+  justify-content: space-between;
 }
