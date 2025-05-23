@@ -48,6 +48,12 @@ header > div > nav > p:hover {
   cursor: pointer;
 }
 
+header > div > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
 header > nav > div > img:hover {
   cursor: pointer;
 }

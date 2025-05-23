@@ -5,13 +5,21 @@ header {
 .only768p {
   display: inherit;
 }
-.display-none {
+.display768p {
   display: none;
 }
 header div nav button {
   min-width: 160px;
 }
 
+h1 {
+  font-size: 32px;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 header > div > nav {
   display: flex;
   justify-content: flex-end;
@@ -25,6 +33,10 @@ header > div > nav {
   gap: 0px;
 }
 
+header > div > img {
+  flex: 1;
+  padding: 4px 0px 4px 40px;
+}
 header > div > nav > p {
   width: 40px;
 }
@@ -32,9 +44,99 @@ header > div > nav > p {
 header > div > nav > p > span {
   display: none;
 }
-
-header > div {
+.first-part nav {
+  overflow: scroll;
+  scrollbar-width: none;
   display: flex;
-  border: 2px black solid;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.first-part > nav > div {
+  width: fit-content;
+  flex-shrink: 0;
+  gap: 5px;
+}
+
+.pictures-box {
+  margin: 20px -20px 40px -20px;
+  width: 120%;
+}
+
+.pictures-box1 {
+  max-width: none;
+}
+
+.second-part {
+  flex-direction: column;
+  margin-bottom: 300px;
+}
+
+.text-section {
+  width: 100%;
+}
+.text-section p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+
+.plan-section {
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 300px;
+  justify-content: center;
+}
+
+.plan-text-box {
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 20px;
+  padding: 32px;
+  height: 60%;
+}
+
+.plan-img-box {
+  height: 40%;
+  width: 100%;
+  border-top-right-radius: 0px;
+}
+
+.plan-img-box > img {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 20px;
+}
+
+.carouselle-bloc {
+  display: flex;
+  flex-direction: column;
+}
+
+.carouselle-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.carouselle li {
+  width: calc((100% - 10px) / 1.5);
+}
+.carousel-img-box {
+  min-height: 150px;
+  max-height: 250px;
+}
+.carousel-img-box img {
+  height: 250px;
+}
+
+.travellers-bloc {
+  display: flex;
+  overflow: scroll;
+  scrollbar-width: none;
+  flex-shrink: 0;
+}
+
+.travellers-box > img {
+  width: 350px;
+
+  object-fit: cover;
 }

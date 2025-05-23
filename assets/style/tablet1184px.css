@@ -1,3 +1,44 @@
 header {
   background-color: rgb(119, 227, 80);
 }
+
+.container {
+  padding: 0px 20px;
+}
+.only1184p {
+  display: inherit;
+}
+
+.display1184p {
+  display: none;
+}
+
+.first-part nav {
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.first-part nav div {
+  width: calc((100% - 30px) / 4);
+  flex: auto;
+}
+
+.pictures-box {
+  margin-top: 10 px;
+  height: 370px;
+}
+
+.pictures-box1 {
+  max-width: 695px;
+}
+.pictures-box2 {
+  width: 400px;
+  flex: none;
+}
+
+.carousel-img-box {
+  width: 100%;
+  position: relative;
+  /* max-height: 150px; */
+  overflow: hidden;
+}

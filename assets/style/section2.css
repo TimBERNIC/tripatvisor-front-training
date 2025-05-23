@@ -27,6 +27,7 @@
 .plan-text-box {
   display: flex;
   flex-direction: column;
+  min-width: 385px;
   justify-content: space-between;
   background-color: #ff5d5d;
 
@@ -38,6 +39,7 @@
 }
 
 .plan-img-box {
+  min-width: 385px;
   height: 40%;
   width: 70%;
 }
