@@ -5,8 +5,9 @@ header {
   top: 0px;
   z-index: 15;
   background-color: white;
-  scrollbar-color: #333333;
-  scrollbar-width: 10px;
+}
+.line-limit {
+  border-bottom: #9d9a9a53 solid 1px;
 }
 
 header > div {

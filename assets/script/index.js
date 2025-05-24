@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const connectionButton = document.getElementById("connection-button");
   const cross = document.getElementById("closed-cross");
   const contactForm = document.getElementById("contactForm");
-
+  const header = document.querySelector("header");
   //   ouverture de la page connect
   connectionButton.addEventListener("click", (event) => {
     formulaire.classList.remove("hidden");
@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   cross.addEventListener("click", (event) => {
     formulaire.classList.add("hidden");
     body.classList.remove("dont-scroll");
+  });
+
+  // ligne on scroll
+
+  document.addEventListener("scroll", (event) => {
+    header.classList.add("line-limit");
+  });
+
+  document.addEventListener("scrollend", (event) => {
+    header.classList.remove("line-limit");
   });
 
   //   Envoie des données du formualrie au serveur
