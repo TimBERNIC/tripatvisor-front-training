@@ -1,10 +1,12 @@
 // Récupération des élément duy DOM
 document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("document loaded");
   const body = document.querySelector("body");
   const formulaire = document.getElementById("formulaire");
   const connectionButton = document.getElementById("connection-button");
   const cross = document.getElementById("closed-cross");
-  const submit = document.getElementById("submit-button");
+  const contactForm = document.getElementById("contactForm");
+
   //   ouverture de la page connect
   connectionButton.addEventListener("click", (event) => {
     formulaire.classList.remove("hidden");
@@ -18,10 +20,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   //   Envoie des données du formualrie au serveur
+  contactForm.addEventListener("click", async (e) => {
+    e.preventDefault();
 
-  submit.addEventListener("click", (event) => {
-    console.log("envoie en cours");
+    const data = {
+      name: document.querySelector("#name").value,
+      lastname: document.querySelector("#lastname").value,
+      email: document.querySelector("#email").value,
+      text: document.querySelector("#text").value,
+    };
 
-    // axios.post("/post");
+    /* console.log(data); */
+
+    const response = await axios.post(
+      "http://localhost:3000/request/mail",
+      data
+    );
+    console.log(response);
   });
 });
