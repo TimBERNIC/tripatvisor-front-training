@@ -1,7 +1,4 @@
 /* HEADER */
-header {
-  background-color: orange;
-}
 
 header div nav button {
   min-width: 160px;
@@ -9,9 +6,9 @@ header div nav button {
 
 header > div > nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 20px;
-  width: 30%;
+  max-width: 50%;
 }
 
 .display1024p {
@@ -45,33 +42,26 @@ header > div > nav {
 
 .plan-section {
   width: 100%;
+}
+.plan-section-box {
   flex-direction: row;
-  align-items: flex-start;
-  height: 100%;
+  width: 100%;
 }
 
 .plan-text-box {
-  border-top-left-radius: 20px;
+  height: 100%;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 20px;
-  height: 100%;
-  width: 100%;
-}
-.plan-img-box {
-  /* min-width: 330px; */
-  height: 100%;
-  width: 100%;
+  border-top-left-radius: 20px;
 }
 
-.plan-img-box > img {
-  width: 100%;
+.plan-img-box {
   height: 100%;
   border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
   border-bottom-left-radius: 0px;
-  object-fit: cover;
-  min-width: none;
+  border-top-left-radius: 0px;
 }
+
 .carouselle li {
   width: calc((100% - 20px) / 2.5);
 }

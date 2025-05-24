@@ -1,6 +1,5 @@
 /* HEADER */
 header {
-  height: 100%;
   margin: 10px 0px;
   position: sticky;
   top: 0px;
@@ -10,15 +9,25 @@ header {
   scrollbar-width: 10px;
 }
 
-header div {
+header > div {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
-}
-header img {
-  height: 40px;
+  align-items: center;
 }
 
-header div nav {
+.logo-box {
+  display: flex;
+  justify-content: center;
+  max-height: 40px;
+  max-width: 200px;
+}
+.logo-box img {
+  width: 80%;
+}
+
+header > div > nav {
+  width: 60%;
   display: flex;
   font-size: 16px;
   font-weight: bold;
@@ -26,34 +35,24 @@ header div nav {
   align-items: center;
 }
 
-header div nav > p,
-button {
-  display: flex;
-  justify-content: center;
-  font-size: 16px;
-  gap: 5px;
-  width: 110px;
-  height: 40px;
-  align-items: center;
-  border-radius: 30px;
-  padding: 10px;
-}
-
-header div nav i {
+header div i {
   font-size: 20px;
 }
 
-header > div > nav > p:hover {
-  background-color: rgba(240, 238, 238, 0.859);
-  cursor: pointer;
+header > div > nav > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-header > div > i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
+header > div > nav > p:hover {
+  background-color: rgba(235, 235, 235, 0.67);
+  cursor: pointer;
+  height: 40px;
+  border-radius: 18px;
 }
+
 header > nav > div > img:hover {
   cursor: pointer;
 }

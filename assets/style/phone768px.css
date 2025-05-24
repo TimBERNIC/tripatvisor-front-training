@@ -1,7 +1,3 @@
-header {
-  background-color: aqua;
-}
-
 .only768p {
   display: inherit;
 }
@@ -15,22 +11,16 @@ header div nav button {
 h1 {
   font-size: 32px;
 }
+
 header > div {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-}
-header > div > nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  width: 30%;
+  align-items: center;
 }
 
 header > div > nav {
-  width: 100px;
-  margin: 0px 20px;
-  gap: 0px;
+  width: auto;
 }
 
 header > div > img {
@@ -69,7 +59,6 @@ header > div > nav > p > span {
 
 .second-part {
   flex-direction: column;
-  margin-bottom: 300px;
 }
 
 .text-section {
@@ -81,32 +70,24 @@ header > div > nav > p > span {
   margin-bottom: 50px;
 }
 
-.plan-section {
+.plan-section-box {
   flex-direction: column;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 300px;
-  justify-content: center;
 }
-
 .plan-text-box {
-  border-bottom-left-radius: 0px;
   border-top-right-radius: 20px;
-  padding: 32px;
-  height: 60%;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 20px;
 }
 
 .plan-img-box {
-  height: 40%;
-  width: 100%;
-  border-top-right-radius: 0px;
-}
-
-.plan-img-box > img {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 20px;
+  border-top-left-radius: 0px;
 }
 
+h2 {
+  margin-top: 30px;
+}
 .carouselle-bloc {
   display: flex;
   flex-direction: column;

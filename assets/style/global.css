@@ -4,6 +4,7 @@
 }
 
 .container {
+  overflow: hidden;
   max-width: 1095px;
   margin: 0px auto;
 }
