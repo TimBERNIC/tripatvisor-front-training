@@ -11,6 +11,8 @@
     <script
       src="https://kit.fontawesome.com/49de3e34f1.js"
       crossorigin="anonymous"></script>
+    <script src="./assets/script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./assets/style/fonts.css" />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href="./assets/style/icons.css" />
@@ -36,7 +38,9 @@
             <i class="icon-notification_bell"></i
             ><span class="display1024p">Alertes</span>
           </p>
-          <button class="display768p">Connectez-vous</button>
+          <button id="connection-button" class="display768p">
+            Connectez-vous
+          </button>
           <p>
             <i class="icon-empty_cart"></i
             ><span class="display1024p">Panier</span>
@@ -519,5 +523,46 @@
         </p>
       </div>
     </footer>
+    <div id="formulaire" class="formulaire hidden">
+      <div class="form-container">
+        <i id="closed-cross" class="icon-times"></i>
+        <div class="form-box">
+          <p>Formulaire de contact</p>
+          <form action="">
+            <input
+              type="text"
+              class="simple-input"
+              name="name"
+              id="name"
+              placeholder="Prénom" />
+            <input
+              type="text"
+              class="simple-input"
+              name="lastname"
+              id="lastname"
+              placeholder="Nom" />
+            <input
+              type="email"
+              class="simple-input"
+              name="email"
+              id="email"
+              placeholder="Email" />
+            <textarea
+              class="text-input"
+              name="message"
+              id="message"
+              placeholder="Ecrivez ici votre message... "></textarea>
+            <button
+              id="submit-button"
+              class="submit-button"
+              type="submit"
+              form="form1"
+              value="Submit">
+              Envoyer le formulaire
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

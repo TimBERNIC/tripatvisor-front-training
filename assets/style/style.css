@@ -5,6 +5,7 @@
 @import "section3.css";
 @import "section4.css";
 @import "footer.css";
+@import "form.css";
 @import "./tablet1184px.css" (max-width: 1184px);
 @import "./tablet1024px.css" (max-width: 1024px);
 @import "./phone768px.css" (max-width: 768px);
